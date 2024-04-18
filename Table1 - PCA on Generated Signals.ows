@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Generated signals ALL" position="(179.0, 570.0)" />
+		<node id="1" name="PCA" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" project_name="Orange3" version="" title="PCA ALL" position="(469.0, 579.0)" />
+		<node id="2" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Table 1 - ALL SIGNALS" position="(609.0, 581.0)" />
+		<node id="3" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Generated signals PERS" position="(176.0, 85.0)" />
+		<node id="4" name="PCA" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" project_name="Orange3" version="" title="PCA PERS" position="(327.0, 85.0)" />
+		<node id="5" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Table 1 - PERS" position="(477.0, 85.0)" />
+		<node id="6" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Generated signals ANTIPERS" position="(177.0, 205.0)" />
+		<node id="7" name="PCA" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" project_name="Orange3" version="" title="PCA ANTIPERS" position="(327.0, 205.0)" />
+		<node id="8" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Table 1 - ANTIPERS" position="(477.0, 205.0)" />
+		<node id="9" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Generated signals DF" position="(172.0, 322.0)" />
+		<node id="10" name="PCA" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" project_name="Orange3" version="" title="PCA FRACTAL" position="(322.0, 322.0)" />
+		<node id="11" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Table 1 - DF" position="(472.0, 322.0)" />
+		<node id="12" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Generated signals PERS+DF" position="(177.0, 442.0)" />
+		<node id="13" name="PCA" qualified_name="Orange.widgets.unsupervised.owpca.OWPCA" project_name="Orange3" version="" title="PCA PERS+FRACTAL" position="(327.0, 442.0)" />
+		<node id="14" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Table 1 - PERS+DF" position="(477.0, 442.0)" />
+		<node id="15" name="Concatenate" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" project_name="Orange3" version="" title="Concatenate" position="(334.0, 578.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="7" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="9" sink_node_id="10" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="10" sink_node_id="11" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="12" sink_node_id="13" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="8" source_node_id="13" sink_node_id="14" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="15" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="10" source_node_id="3" sink_node_id="15" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="11" source_node_id="6" sink_node_id="15" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="12" source_node_id="9" sink_node_id="15" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="13" source_node_id="12" sink_node_id="15" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+		<link id="14" source_node_id="0" sink_node_id="15" source_channel="Data" sink_channel="Additional Data" enabled="true" source_channel_id="data" sink_channel_id="additional_data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_all.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_toate.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb-1.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/NoiseSiGen9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_8Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/semnaleR', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x034\x00\x00\x01O\x00\x00\x04K\x00\x00\x02\xa3\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'axis_labels': 10, 'controlAreaVisible': True, 'maxp': 20, 'ncomponents': 2, 'normalize': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x0c\x00\x00\x01V\x00\x00\x06\xe2\x00\x00\x03i\x00\x00\x04\r\x00\x00\x01u\x00\x00\x06\xe1\x00\x00\x03h\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x04\r\x00\x00\x01u\x00\x00\x06\xe1\x00\x00\x03h', 'variance_covered': 75, '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVThMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+AAAB4AAAAQQ
+AAAAAAAAABcAAAd/AAAEDwAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRL/4wNY2xhc3NfZGVuc2l0eZSIjBFqaXR0ZXJfY29udGludW91c5SIjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsEjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAphdHRyX2NvbG9ylIwDUEMx
+lEtmhpSMCmF0dHJfbGFiZWyUjAROYW1llEtnhpSMCmF0dHJfc2hhcGWUjAVDbGFzc5RLZYaUjAlh
+dHRyX3NpemWUTkr+////hpSMBmF0dHJfeJRoIUtmhpSMBmF0dHJfeZSMA1BDMpRLZoaUaAp9lGgW
+SwV1jAphdHRyaWJ1dGVzlH2UKIwFQ2xhc3OUSwGMA21lZJRLAowFc2lnbWGUSwKMAk0zlEsCjAJN
+NJRLAowHZG5mZnRfMZRLAowHZG5mZnRfMpRLAowHZG5mZnRfM5RLAowIZG5wZmZ0XzGUSwKMCGRu
+cGZmdF8ylEsCjAhkbnBmZnRfM5RLAowIZGlwZmZ0XzGUSwKMCGRpcGZmdF8ylEsCjAhkaXBmZnRf
+M5RLAowIZG50aW1wXzGUSwKMCGRudGltcF8ylEsCjAhkbnRpbXBfM5RLAowHaGhjb3JfMZRLAowH
+aGhjb3JfMpRLAowHaGhjb3JfM5RLAowHaHVyc3RfMZRLAowHaHVyc3RfMpRLAowHaHVyc3RfM5RL
+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
+</properties>
+		<properties node_id="3" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_toate.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb-1.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/NoiseSiGen9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_8Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/semnaleR', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x034\x00\x00\x01O\x00\x00\x04K\x00\x00\x02\xa3\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2', '__version__': 3}</properties>
+		<properties node_id="4" format="literal">{'auto_commit': True, 'axis_labels': 10, 'controlAreaVisible': True, 'maxp': 20, 'ncomponents': 2, 'normalize': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02h\x00\x00\x010\x00\x00\x05&gt;\x00\x00\x03C\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B', 'variance_covered': 97, '__version__': 1}</properties>
+		<properties node_id="5" format="pickle">gASVwgMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+AAAB4AAAAQQ
+AAAAAAAAABcAAAd/AAAEDwAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRL/4wNY2xhc3NfZGVuc2l0eZSIjBFqaXR0ZXJfY29udGludW91c5SIjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsHjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjANQQzGU
+S2aGlIwKYXR0cl9sYWJlbJSMBE5hbWWUS2eGlIwKYXR0cl9zaGFwZZSMBUNsYXNzlEtlhpSMCWF0
+dHJfc2l6ZZROSv7///+GlIwGYXR0cl94lGghS2aGlIwGYXR0cl95lIwDUEMylEtmhpRoCn2UaBZL
+BXWMCmF0dHJpYnV0ZXOUfZQojAVDbGFzc5RLAYwDbWVklEsCjAVzaWdtYZRLAowCTTOUSwKMAk00
+lEsCjAdkbmZmdF8xlEsCjAdkbmZmdF8ylEsCjAdkbmZmdF8zlEsCjAhkbnBmZnRfMZRLAowIZG5w
+ZmZ0XzKUSwKMCGRucGZmdF8zlEsCjAhkaXBmZnRfMZRLAowIZGlwZmZ0XzKUSwKMCGRpcGZmdF8z
+lEsCjAhkbnRpbXBfMZRLAowIZG50aW1wXzKUSwKMCGRudGltcF8zlEsCjAdoaGNvcl8xlEsCjAdo
+aGNvcl8ylEsCjAdoaGNvcl8zlEsCjAdodXJzdF8xlEsCjAdodXJzdF8ylEsCjAdodXJzdF8zlEsC
+jAVzdW1fcZRLAowDdHR0lEsCdYwFbWV0YXOUfZQojAROYW1llEsDjANQQzGUSwKMA1BDMpRLAnV1
+YmF1Lg==
+</properties>
+		<properties node_id="6" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_antipers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_toate.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb-1.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/NoiseSiGen9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_8Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/semnaleR', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x034\x00\x00\x01O\x00\x00\x04K\x00\x00\x02\xa3\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2', '__version__': 3}</properties>
+		<properties node_id="7" format="literal">{'auto_commit': True, 'axis_labels': 10, 'controlAreaVisible': True, 'maxp': 20, 'ncomponents': 2, 'normalize': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02|\x00\x00\x01&gt;\x00\x00\x05R\x00\x00\x03Q\x00\x00\x02}\x00\x00\x01]\x00\x00\x05Q\x00\x00\x03P\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02}\x00\x00\x01]\x00\x00\x05Q\x00\x00\x03P', 'variance_covered': 98, '__version__': 1}</properties>
+		<properties node_id="8" format="pickle">gASVwgMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+AAAB4AAAAQQ
+AAAAAAAAABcAAAd/AAAEDwAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRL/4wNY2xhc3NfZGVuc2l0eZSIjBFqaXR0ZXJfY29udGludW91c5SIjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsLjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjANQQzGU
+S2aGlIwKYXR0cl9sYWJlbJSMBE5hbWWUS2eGlIwKYXR0cl9zaGFwZZSMBUNsYXNzlEtlhpSMCWF0
+dHJfc2l6ZZROSv7///+GlIwGYXR0cl94lGghS2aGlIwGYXR0cl95lIwDUEMylEtmhpRoCn2UaBZL
+BXWMCmF0dHJpYnV0ZXOUfZQojAVDbGFzc5RLAYwDbWVklEsCjAVzaWdtYZRLAowCTTOUSwKMAk00
+lEsCjAdkbmZmdF8xlEsCjAdkbmZmdF8ylEsCjAdkbmZmdF8zlEsCjAhkbnBmZnRfMZRLAowIZG5w
+ZmZ0XzKUSwKMCGRucGZmdF8zlEsCjAhkaXBmZnRfMZRLAowIZGlwZmZ0XzKUSwKMCGRpcGZmdF8z
+lEsCjAhkbnRpbXBfMZRLAowIZG50aW1wXzKUSwKMCGRudGltcF8zlEsCjAdoaGNvcl8xlEsCjAdo
+aGNvcl8ylEsCjAdoaGNvcl8zlEsCjAdodXJzdF8xlEsCjAdodXJzdF8ylEsCjAdodXJzdF8zlEsC
+jAVzdW1fcZRLAowDdHR0lEsCdYwFbWV0YXOUfZQojAROYW1llEsDjANQQzGUSwKMA1BDMpRLAnV1
+YmF1Lg==
+</properties>
+		<properties node_id="9" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_df.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_frac.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_antipers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_toate.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb-1.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/NoiseSiGen9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_8Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/semnaleR', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x034\x00\x00\x01O\x00\x00\x04K\x00\x00\x02\xa3\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2', '__version__': 3}</properties>
+		<properties node_id="10" format="literal">{'auto_commit': True, 'axis_labels': 10, 'controlAreaVisible': True, 'maxp': 20, 'ncomponents': 2, 'normalize': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02h\x00\x00\x010\x00\x00\x05&gt;\x00\x00\x03C\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B', 'variance_covered': 78, '__version__': 1}</properties>
+		<properties node_id="11" format="pickle">gASVwgMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+AAAB4AAAAQQ
+AAAAAAAAABcAAAd/AAAEDwAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRL/4wNY2xhc3NfZGVuc2l0eZSIjBFqaXR0ZXJfY29udGludW91c5SIjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsHjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjANQQzGU
+S2aGlIwKYXR0cl9sYWJlbJSMBE5hbWWUS2eGlIwKYXR0cl9zaGFwZZSMBUNsYXNzlEtlhpSMCWF0
+dHJfc2l6ZZROSv7///+GlIwGYXR0cl94lGghS2aGlIwGYXR0cl95lIwDUEMylEtmhpRoCn2UaBZL
+BXWMCmF0dHJpYnV0ZXOUfZQojAVDbGFzc5RLAYwDbWVklEsCjAVzaWdtYZRLAowCTTOUSwKMAk00
+lEsCjAdkbmZmdF8xlEsCjAdkbmZmdF8ylEsCjAdkbmZmdF8zlEsCjAhkbnBmZnRfMZRLAowIZG5w
+ZmZ0XzKUSwKMCGRucGZmdF8zlEsCjAhkaXBmZnRfMZRLAowIZGlwZmZ0XzKUSwKMCGRpcGZmdF8z
+lEsCjAhkbnRpbXBfMZRLAowIZG50aW1wXzKUSwKMCGRudGltcF8zlEsCjAdoaGNvcl8xlEsCjAdo
+aGNvcl8ylEsCjAdoaGNvcl8zlEsCjAdodXJzdF8xlEsCjAdodXJzdF8ylEsCjAdodXJzdF8zlEsC
+jAVzdW1fcZRLAowDdHR0lEsCdYwFbWV0YXOUfZQojAROYW1llEsDjANQQzGUSwKMA1BDMpRLAnV1
+YmF1Lg==
+</properties>
+		<properties node_id="12" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers_df.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers_frac.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_frac.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_antipers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_pers.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/12FebGenSignal_toate.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb-1.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_12Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/2-comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/comparare_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/NoiseSiGen9Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': 'C:/semnaleR/semnale_generate_8Feb.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 26, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/semnaleR', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x034\x00\x00\x01O\x00\x00\x04K\x00\x00\x02\xa3\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x035\x00\x00\x01n\x00\x00\x04J\x00\x00\x02\xa2', '__version__': 3}</properties>
+		<properties node_id="13" format="literal">{'auto_commit': True, 'axis_labels': 10, 'controlAreaVisible': True, 'maxp': 20, 'ncomponents': 2, 'normalize': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02h\x00\x00\x010\x00\x00\x05&gt;\x00\x00\x03C\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02i\x00\x00\x01O\x00\x00\x05=\x00\x00\x03B', 'variance_covered': 84, '__version__': 1}</properties>
+		<properties node_id="14" format="pickle">gASVwgMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+AAAB4AAAAQQ
+AAAAAAAAABcAAAd/AAAEBQAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAQPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRL/4wNY2xhc3NfZGVuc2l0eZSIjBFqaXR0ZXJfY29udGludW91c5SIjAtqaXR0ZXJf
+c2l6ZZRLAIwTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsHjAlzaG93X2dyaWSUiYwLc2hvd19sZWdlbmSUiIwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjANQQzGU
+S2aGlIwKYXR0cl9sYWJlbJSMBE5hbWWUS2eGlIwKYXR0cl9zaGFwZZSMBUNsYXNzlEtlhpSMCWF0
+dHJfc2l6ZZROSv7///+GlIwGYXR0cl94lGghS2aGlIwGYXR0cl95lIwDUEMylEtmhpRoCn2UaBZL
+BXWMCmF0dHJpYnV0ZXOUfZQojAVDbGFzc5RLAYwDbWVklEsCjAVzaWdtYZRLAowCTTOUSwKMAk00
+lEsCjAdkbmZmdF8xlEsCjAdkbmZmdF8ylEsCjAdkbmZmdF8zlEsCjAhkbnBmZnRfMZRLAowIZG5w
+ZmZ0XzKUSwKMCGRucGZmdF8zlEsCjAhkaXBmZnRfMZRLAowIZGlwZmZ0XzKUSwKMCGRpcGZmdF8z
+lEsCjAhkbnRpbXBfMZRLAowIZG50aW1wXzKUSwKMCGRudGltcF8zlEsCjAdoaGNvcl8xlEsCjAdo
+aGNvcl8ylEsCjAdoaGNvcl8zlEsCjAdodXJzdF8xlEsCjAdodXJzdF8ylEsCjAdodXJzdF8zlEsC
+jAVzdW1fcZRLAowDdHR0lEsCdYwFbWV0YXOUfZQojAROYW1llEsDjANQQzGUSwKMA1BDMpRLAnV1
+YmF1Lg==
+</properties>
+		<properties node_id="15" format="literal">{'append_source_column': False, 'auto_commit': True, 'controlAreaVisible': True, 'ignore_compute_value': False, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1c\x00\x00\x01:\x00\x00\x04c\x00\x00\x02\xb8\x00\x00\x03\x1d\x00\x00\x01Y\x00\x00\x04b\x00\x00\x02\xb7\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1d\x00\x00\x01Y\x00\x00\x04b\x00\x00\x02\xb7', 'source_attr_name': 'Source ID', 'source_column_role': 0, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
